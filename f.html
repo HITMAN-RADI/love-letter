@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #ffcccb;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .letter {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 1em;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff69b4;
+            color: white;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        function toggleLetter(letterId) {
+            const letter = document.getElementById(letterId);
+            if (letter.style.display === "none" || letter.style.display === "") {
+                letter.style.display = "block";
+            } else {
+                letter.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>For My Love</h1>
+    <p>A special place just for you!</p>
+</header>
+
+<section>
+    <h2>Letters for You</h2>
+    <button onclick="toggleLetter('letter1')">Open Letter 1</button>
+    <div id="letter1" class="letter">
+        <p>Dear [ANJUUU],</p>
+        <p>Every moment spent with you is a treasure. Your laughter is my favorite sound, and your happiness is my greatest joy. I love you more than words can express.</p>
+        <p>Forever yours,</p>
+        <p>[YOUR HARSHUUU]</p>
+    </div>
+
+    <button onclick="toggleLetter('letter2')">Open Letter 2</button>
+    <div id="letter2" class="letter">
+        <p>My Dearest [LOVE],</p>
+        <p>From the first moment I saw you, I knew you were special. You bring light into my life, and I am so grateful for every moment we share. Thank you for being you.</p>
+        <p>With all my love,</p>
+        <p>[YOUR HARSHUUU]</p>
+    </div>
+
+    <button onclick="toggleLetter('letter3')">Open Letter 3</button>
+    <div id="letter3" class="letter">
+        <p>Sweet [WIFEYYY],</p>
+        <p>Our journey together has been nothing short of magical. I cherish every adventure we embark on and look forward to creating many more memories with you.</p>
+        <p>Yours always,</p>
+        <p>[YOUR HUSBAND]</p>
+    </div>
+</section>
+
+<footer>
+    <p>Created with love by [YOUR FOREVER LOVE]</p>
+</footer>
+
+</body>
+</html>
